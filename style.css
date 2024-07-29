@@ -1,0 +1,170 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+   font-family: Georgia, serif;
+   text-align: center;
+}
+
+body {
+ background-color: #e1ffd6; 
+}
+
+/* STYLE TEXT */
+
+h1 {
+  color: #7b5b24;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   text-align: left;
+}
+h2 span { 
+   color: #ffffff; 
+   font: bold 30px/40px Georgia, serif; 
+   letter-spacing: -1px;  
+   background: #548354;
+   padding: 15px; 
+   line-height: 2;
+   border-radius: 10px;
+}
+h2 span.spacer {
+   padding:0 5px;
+}
+h3{
+   padding-top:20px;
+}
+
+p {
+   padding: 20px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+/* STYLE IMAGES */
+
+.image { 
+   position: relative; 
+   width: 100%;
+   height: 500px;
+   margin-bottom: 20px;
+}
+
+#icon {
+   width: 40px;
+   height: 30px;
+   border-radius: 25%;
+   padding:0;
+   margin:0;
+}
+
+img {
+   width: 90%;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* STYLE NAV BAR */
+
+
+ul {
+  list-style-type: none;
+  background-color: #584423;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  color: #e1ffd6; 
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
+  padding: 20px;
+  height: 100%;
+  background-color: #00992e;
+}
+
+li a:hover{
+  background-color: #986134;
+}
+
+/* STYLE BUTTONS */
+
+button {
+   background-color: #4dff00;
+   color: #564301;
+   padding: 10px;
+   margin: 10px;
+}
+
+button:hover{
+  background-color: #00a814;
+}
+
+/* ADD MORE! */
+@media screen and (max-width: 850px){
+   .image { 
+      height:400px;
+   }
+   h2 { 
+      top: 100px;
+   }
+   h2 span{
+      font-size: 30px;
+      line-height: 2;
+
+   }
+   .flex-container{
+      flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width: 350px){
+   .image { 
+      height:300px;
+   }
+   h2 { 
+      top: 60px;
+   }
+   h2 span{
+      font-size: 20px;
+      line-height: 2;
+
+   }
+   .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+}
+
+.flex-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+
+.flex-item{
+   flex-basis: 100%;
+   margin: 1%;
+}
